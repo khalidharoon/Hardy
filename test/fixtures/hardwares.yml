@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Item: MyString
+  Barcode: 1
+  Status: MyString
+  Checked_Out_By: MyString
+  Home_Location: MyString
+  Date: 2012-11-26 23:38:38
+  Total_Quantity: 1
+  Available: 1
+  cost: 1.5
+  description: MyText
+
+two:
+  Item: MyString
+  Barcode: 1
+  Status: MyString
+  Checked_Out_By: MyString
+  Home_Location: MyString
+  Date: 2012-11-26 23:38:38
+  Total_Quantity: 1
+  Available: 1
+  cost: 1.5
+  description: MyText

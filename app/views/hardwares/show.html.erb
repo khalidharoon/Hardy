@@ -1,0 +1,11 @@
+<h2><%= @hardware.title %></h2>
+<p>
+  Posted by:<%= @hardware.Checked_Out_By %>
+  on <%= @hardware.Date %>
+</p>
+<p>
+  <b>Hardware:</b><br />
+  <%= @hardware.Item %>
+</p>
+<%= link_to 'Edit review', edit_hardware_path(@hardware) %> |
+<%= link_to 'Back to main menu', hardwares_path %>

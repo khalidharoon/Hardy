@@ -1,0 +1,6 @@
+<h1>Hardware Item</h1>
+	<% for hardware in @hardwares %>
+		<%= link_to hardware.title, hardware %>  submitted by <%= hardware.Checked_Out_By %><br />
+		<%= hardware.Date %><br />
+		<%= hardware.Item %><br /><br />
+	<% end %>

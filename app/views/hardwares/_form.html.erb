@@ -1,0 +1,57 @@
+<%= form_for(@hardware) do |f| %>
+  <% if @hardware.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@hardware.errors.count, "error") %> prohibited this hardware from being saved:</h2>
+
+      <ul>
+      <% @hardware.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Item %><br />
+    <%= f.text_field :Item %>
+  </div>
+  <div class="field">
+    <%= f.label :Barcode %><br />
+    <%= f.number_field :Barcode %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br />
+    <%= f.text_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :Checked_Out_By %><br />
+    <%= f.text_field :Checked_Out_By %>
+  </div>
+  <div class="field">
+    <%= f.label :Home_Location %><br />
+    <%= f.text_field :Home_Location %>
+  </div>
+  <div class="field">
+    <%= f.label :Date %><br />
+    <%= f.datetime_select :Date %>
+  </div>
+  <div class="field">
+    <%= f.label :Total_Quantity %><br />
+    <%= f.number_field :Total_Quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :Available %><br />
+    <%= f.number_field :Available %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br />
+    <%= f.text_field :cost %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
